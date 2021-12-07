@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    background-image: url("../images/image-hero-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+
+    .hero-nav{
+        display: flex;
+
+
+        img{
+            width: 170px;
+            height: 100%;
+        }
+
+        .nav-list{
+
+        }
+
+        .nav-list-item{
+            
+        }
+    }
+}
