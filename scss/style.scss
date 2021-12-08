@@ -1,7 +1,13 @@
+@import 'config';
+
+$nav-side-padding: 17px; 
+$nav-side-paddingX2: $nav-side-padding*2;
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $font-stack;
 }
 
 .hero{
@@ -10,21 +16,42 @@ body{
     background-repeat: no-repeat;
     height: 400px;
 
-    .hero-nav{
+    .navbar{
+        position: relative;
         display: flex;
-
+        justify-content: space-between;
+        align-items: center;
+        // border: 1px solid red;
+        padding: 20px $nav-side-padding;
 
         img{
-            width: 170px;
+            width: 160px;
             height: 100%;
         }
 
         .nav-list{
-
+            position: fixed;
+            top: 75px;
+            width: calc(100% - 34px);
+            padding: 0;
+            margin: 0 auto;
+            background: #fff;
+            list-style-type: none;
+            border-radius: 10px;
         }
 
         .nav-list-item{
-            
+            padding: 20px 16px;
+            // width: 100%;
+            font-size: 1.2em;
+            font-weight: 500;
+            color: $black;
+        }
+
+        .btn-menu{
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
         }
     }
 }
